@@ -25,12 +25,6 @@ html, body {
     padding: 0;
     margin: 0;
 }
-/*#transition-disabled {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-}*/
 a {
     color: black;
     text-decoration: none;
@@ -43,7 +37,7 @@ a {
     margin-right: auto;
 }
 .top {
-    width: 100%;   /* for spaces between right and left */
+    width: 100%;   /*  space between right and left */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,14 +73,14 @@ a {
     width: 300px;
     height: 100%;
     visibility: hidden;
-    overflow: auto;      /* для скрола */
+    overflow: auto;      /* scroll */
     right: -100%;
     z-index: 5;
     margin-top: 175px;
     padding-bottom: 150px;
     transition-duration: .25s;
 }
-.dropdown_menu_list {         /* NEW [22_03]  */
+.dropdown_menu_list {
     display: block;
 }
 .dropdown_menu_list a {
@@ -123,15 +117,15 @@ a {
     justify-content: flex-end;
     align-items: center;
 
-    overflow: hidden;    /* for photo */
-    height: 604px;     /* for photo */
+    overflow: hidden;    /* ph */
+    height: 604px;     /* ph */
 }
 .screen1_photo img {
     position: absolute;
-    width: 100%;        /* for photo */
-    height: 100%;       /* for photo */
-    object-fit: cover;   /* for photo */
-    object-position: center;   /* for photo */
+    width: 100%;        /* ph */
+    height: 100%;       /* ph */
+    object-fit: cover;   /* ph */
+    object-position: center;   /* ph */
 }
 .screen1_banner {
     position: absolute;
@@ -148,30 +142,24 @@ a {
 .first_phrase {
     font-family: 'Lato Bold', serif;
     font-weight: bold;
-    /*font-size: 48px;  */ /* work 17_03*/
     font-size: calc(28px + 20 * (100vw / 1920));
     padding-bottom: 5px;
 }
 .second_phrase {
     font-family: "PT Sans", serif;
-    /*font-size: 30px;*/
     font-size: calc(20px + 10 * (100vw / 1920));
 }
-.screen1_banner a {             /* кнопка */
+.screen1_banner a {
     margin-top: 45px;
     background-color: #605770;
-    /*width: 310px;
-    height: 80px;*/
     width: 310px;
     height: calc(50px + 30 * (100vw / 1920));
     color: white;
     font-family: 'Lato Regular', serif;
-    /*font-size: 24px;*/
     font-size: calc(14px + 10 * (100vw / 1920));
     text-align: center;
     line-height: calc(50px + 30 * (100vw / 1920));
-    /*line-height: 80px;*/    /* выравнивание текста (работает с одинаковым height) */
-    transition: background-color 1s;   /* button animation */
+    transition: background-color 1s;
 }
 .screen1_banner a:hover {
     background-color: #827993;
@@ -183,17 +171,13 @@ a {
     margin-right: auto;
     padding-top: calc(66px + 34 * (100vw / 1920));
     padding-bottom: calc(35px + 31 * (100vw / 1920));
-    /*padding-top: 100px;
-    padding-bottom: 66px;*/
     text-align: center;
     font-family: 'Lato Regular', serif;
     font-size: calc(28px + 20 * (100vw / 1920));
-    /*font-size: 48px;*/
 }
 .screen2 {
     margin-left: auto;
     margin-right: auto;
-    /*margin-bottom: 200px;*/
     margin-bottom: calc(150px + 50 * (100vw / 1920));
 }
 .row_photo {
@@ -247,8 +231,6 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /*left: 50%;
-    transform: translate(-50%);*/
 }
 .screen3_frame {
     height: 944px;
@@ -271,15 +253,12 @@ a {
 }
 .info {
     font-family: "Source Sans Pro", serif;
-    /*font-size: 30px;*/
     font-size: calc(20px + 10 * (100vw / 1920));
     margin-bottom: 10px;
 }
 .info img {
     position: relative;
-    /*left: 15px;*/
     top: 5px;
-    /*width: 30px;*/
     width: calc(25px + 5 * (100vw / 1920));
     margin-right: 20px;
 }
@@ -289,7 +268,6 @@ a {
 
 
 .screen4 {
-    /*height: 977px;*/
     height: calc(550px + 427 * (100vw / 1920));
     background: #6E8857;
 }
@@ -310,16 +288,12 @@ a {
 .screen4_left a {
     background-color: #605770;
     margin-top: 50px;
-    /*width: 310px;*/
     width: 60%;
-    /*height: 80px;*/
     height: calc(50px + 30 * (100vw / 1920));
     color: white;
     font-family: 'Lato Regular', serif;
-    /*font-size: 24px;*/
     font-size: calc(14px + 10 * (100vw / 1920));
     text-align: center;
-    /*line-height: 80px;*/
     line-height: calc(50px + 30 * (100vw / 1920));
     transition: background-color 1s;
 }
@@ -333,7 +307,6 @@ a {
 }
 .screen4_photo img {
     width: calc(100px + 485 * (100vw / 1920));
-    /*width: 100%;*/
     height: 100%;
     object-fit: cover;
 }
@@ -455,7 +428,7 @@ footer {
         display: block;
     }
 
-    header {     /* фиксируем меню */
+    header {
         position: fixed;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
         top: 0;
@@ -463,7 +436,7 @@ footer {
         background-color: #CCAB95;
         z-index: 50;
     }
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 175px;
     }
 
@@ -477,12 +450,12 @@ footer {
     .dropdown_menu_list li {
         padding-top: 25px;
     }
-    #menu_toggle:checked ~ .dropdown_menu_container {   /* выводим меню по нажатию на checkbox */
+    #menu_toggle:checked ~ .dropdown_menu_container {
         visibility: visible;
         right: 0;
     }
     body.lock {
-        overflow: hidden;   /* запрет прокрутки во время открытого меню */
+        overflow: hidden;
     }
     #offcanvas.active {
         top: 175px;
@@ -537,7 +510,7 @@ footer {
     }
 }
 @media (max-width: 767px) {   /*  mobile  */
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 155px;
     }
     .dropdown_menu_container {
@@ -581,13 +554,13 @@ footer {
     }
 
     .between {
-        width: 100%;    /* probably bound with '@media(max-width: 1249px) { .between {width 960px}  }' */
+        width: 100%;    /* bound with '@media(max-width: 1249px) { .between {width 960px}  }' */
         padding-right: 15px;
         padding-left: 15px;
     }
 
     .screen2 {
-        width: 100%;    /* probably bound with '@media(max-width: 1249px) { .screen2 {width 960px}  }' */
+        width: 100%;    /* bound with '@media(max-width: 1249px) { .screen2 {width 960px}  }' */
         max-width: 720px;  /* photo on full screen */
     }
     .screen2_two_columns {   /* for 1 column */
@@ -621,7 +594,7 @@ footer {
 
 
     .screen4_frame {
-        width: 100%;     /* probably bound with '@media(max-width: 1249px) { .screen4_frame {width 960px}  }' */
+        width: 100%;     /* bound with '@media(max-width: 1249px) { .screen4_frame {width 960px}  }' */
         position: relative;
         max-width: 767px;
         flex-direction: row;   /* return text and photo (for opacity) */
@@ -641,7 +614,7 @@ footer {
 }
 
 @media (max-width: 575px) {
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 128px;
     }
     #offcanvas.active {

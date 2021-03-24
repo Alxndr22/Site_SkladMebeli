@@ -16,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -38,7 +39,7 @@ a {
     margin-right: auto;
 }
 .top {
-    width: 100%;    /* for spaces between right and left */
+    width: 100%;    /* spaces between right and left */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,19 +57,9 @@ a {
     font-family: "PT Sans", serif;
     font-size: 24px;
 }
-.menu_mobile {
-    /*height: 100%;*/
-    /*position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;*/
-}
+
 .menu_mobile img {
     display: none;
-    /*position: fixed;
-    top: 60px;
-    right: 30px;
-    z-index: 6;*/
     width: 40px;
 }
 #line {
@@ -86,14 +77,14 @@ a {
     width: 300px;
     height: 100%;
     visibility: hidden;
-    overflow: auto;      /* для скрола */
+    overflow: auto;      /* scroll */
     right: -100%;
     z-index: 6;
     margin-top: 175px;
     padding-bottom: 150px;
     transition-duration: .25s;
 }
-.dropdown_menu_list {         /* NEW [22_03]  */
+.dropdown_menu_list {
     display: block;
 }
 .dropdown_menu_list a {
@@ -118,7 +109,6 @@ a {
     right: 0;
 }
 
-                            /* --------- */
 
 .screen1 {
     height: 604px;
@@ -130,15 +120,15 @@ a {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;    /* for photo */
-    height: 604px;     /* for photo */
+    overflow: hidden;    /* ph */
+    height: 604px;     /* ph */
 }
 .screen1_photo img {
     position: absolute;
-    width: 100%;        /* for photo */
-    height: 100%;       /* for photo */
-    object-fit: cover;   /* for photo */
-    object-position: center;   /* for photo */
+    width: 100%;        /* ph */
+    height: 100%;       /* ph */
+    object-fit: cover;   /* ph */
+    object-position: center;   /* ph */
 }
 .screen1_banner {
     position: absolute;
@@ -201,12 +191,10 @@ li {
 .contacts_first_phrase {
     font-family: 'Lato Regular', serif;
     font-size: calc(20px + 10 * (100vw / 1920));
-    /*font-size: 30px;*/
 }
 .contacts_second_phrase {
     font-family: "Source Sans Pro", serif;
     font-size: calc(20px + 10 * (100vw / 1920));
-    /*font-size: 30px;*/
     font-weight: bold;
 }
 
@@ -392,7 +380,7 @@ footer {
     }
 
 
-    header {     /* фиксируем меню */
+    header {
         position: fixed;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
         top: 0;
@@ -400,7 +388,7 @@ footer {
         background-color: #CCAB95;
         z-index: 50;
     }
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 175px;
     }
 
@@ -414,13 +402,13 @@ footer {
     .dropdown_menu_list li {
         padding-top: 25px;
     }
-    #menu_toggle:checked ~ .dropdown_menu_container {   /* выводим меню по нажатию на checkbox */
+    #menu_toggle:checked ~ .dropdown_menu_container {
         visibility: visible;
         right: 0;
     }
 
     body.lock {
-        overflow: hidden;   /* запрет прокрутки во время открытого меню */
+        overflow: hidden;
     }
     #offcanvas.active {
         background-color: rgba(0,0,0,.6);
@@ -468,7 +456,7 @@ footer {
 }
 @media (max-width: 767px) {          /*  mobile  */
 
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 155px;
     }
     .dropdown_menu_container {
@@ -488,7 +476,7 @@ footer {
     }
 
     .between {
-        width: 100%;    /* probably bound with '@media(max-width: 1249px) { .between {width 960px}  }' */
+        width: 100%;    /*  bound with '@media(max-width: 1249px) { .between {width 960px}  }' */
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -505,7 +493,7 @@ footer {
     }
 
     .screen2 {
-        width: 100%;    /* probably bound with '@media(max-width: 1249px) { .screen2 {width 960px}  }' */
+        width: 100%;    /*  bound with '@media(max-width: 1249px) { .screen2 {width 960px}  }' */
         max-width: 720px;  /* photo on full screen */
     }
 
@@ -551,7 +539,7 @@ footer {
 }
 @media (max-width: 575px) {
 
-    .screen1 {     /* отступ от фиксированого меню */
+    .screen1 {
         margin-top: 128px;
     }
     #offcanvas.active {
